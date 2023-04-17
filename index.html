@@ -7,9 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="init()">
+
+    <div id="main-view">
+        <section id="intro-view">
+            <h1 id="game-title">Guess The <span>Number</span>🤔</h1>
+            <h4 id="choose-difficulty">Select Difficulty</h4>
+            <button onClick="easyButton()" id="btn-easy">Easy : 10 Chances</button>
+            <button id="btn-hard">Hard : 5 Chances</button>
+        </section>
+
+        <section id="game-Area">
+        
+        </section>
+    </div>
 
     
+       
+
+
     
     <script src="js/index.js"></script>
 </body>
