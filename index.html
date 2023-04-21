@@ -13,15 +13,18 @@
         <section id="intro-view">
             <h1 id="game-title">Guess The <span>Number</span>🤔</h1>
             <h4 id="choose-difficulty">Select Difficulty</h4>
-            <button onClick="easyButton()" id="btn-easy">Easy : 10 Chances</button>
-            <button onClick="easyButton()" id="btn-hard">Hard : 5 Chances</button>
+            <button onClick="easyButton()" id="btn-easy" >Easy : 10 Chances</button>
+            <button onClick="hardButton()" id="btn-hard" >Hard : 5 Chances</button>
         </section>
 
         <section id="game-Area">
-            <button id="btn-new-game">New Game</button>
+            <button id="btn-new-game" onclick="restart()">New Game</button>
             <h3 id="desc">Your Progress</h3>
-            <input type="number" id="input-field" placeholder="Enter Your Guess">
-            <h4 id="attempts">Your Attempts :<span></span></h4>
+            <input type="number"
+             id="input-field" 
+             placeholder="Enter Your Guess"
+             onchange="currInput()">
+            <h4 id="attempts">Attempts left :<span id="spanNumber"></span></h4>
             <h4 id="guesses">Your Previous Guesses :<span></span></h4>
         </section>
     </div>

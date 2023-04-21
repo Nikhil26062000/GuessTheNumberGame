@@ -82,7 +82,7 @@
     width: 40%;
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 100px 50px 80px 50px 50px;
+    grid-template-rows: 60px 50px 80px 50px 50px;
     background-color:#5B8FB9;
     place-items: center;
     
